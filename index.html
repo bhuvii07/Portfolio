@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">   
+    <title>FLIQAINDIA</title>
+</head>
+<style>
+    #navbar{
+    position: relative;
+    width: 112.3%;
+}
+#navbar{
+display: flex;
+align-items: center;
+position: relative;
+}
+#navbar button{
+    text-align: right;
+}
+/* logo and images */
+#logo{
+ margin: 10px 45px;
+}
+#logo img{
+margin: 3px 3px;
+height: 90px;
+border-radius: 50%;
+}
+#navbar ul{
+display: flex;
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 86.4;
+ z-index: -1;
+ opacity: 0.4;
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+padding: 10px;
+
+}
+.btn1{
+    padding: 10px 10px;
+    background-color: #c8f0f3;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+}
+.btn2{
+    padding: 10px 10px;
+    background-color: #e6c3f6;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+}
+#navbar ul li a{
+color: black;
+display: block;
+padding: 10px 10px;
+border-radius: 1px 1px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+border-radius: 3px;
+}
+#navbar button{
+    text-align: right;
+}
+/*home section */
+#home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+justify-content: center;
+align-items: center;
+
+}
+#home img {
+    height: 500px;
+    width: 130%;
+
+}
+#home h1{
+    font-size: larger;
+    height: 20%;
+}
+#home text{
+    padding: 20px;
+    border: 3px solid black;
+    margin: 3px auto;
+    border-radius: 10px;
+}
+ /*service section */
+ #services {
+    margin: 34px;
+    display: flex;
+ }
+ #services .box{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: grey;
+ }
+ #services .box img{
+    height: 180px;
+    margin: auto;
+    display: block;
+    width: 210px;
+ }
+#services .box p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#container img{
+    height: 250px;
+    width: 112.3%;
+}
+#container{
+
+flex-direction: column;
+padding: 3px 200px;
+
+
+}
+#container{
+    
+    background: url(design.jpg);
+    height: 250px;
+    width: 70%;
+}
+#blogs {
+    margin: 34px;
+    display: flex;
+ }
+ #blogs .box{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: grey;
+ }
+
+ #blogs .box img{
+    height: 180px;
+    margin: auto;
+    display: block;
+    width: 210px;
+ }
+#blogs .box p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#blogs button{    
+    
+text-align: center;
+
+}
+body {
+    background-color: bisque;
+}
+
+
+        
+    
+    .loader{
+        background: conic-gradient(
+            #df398473 0 25%,
+            #ff90f4 25% 50%,
+            #644a3d 50% 75%,
+            #b687ec 75%
+        );
+        background-size: 200% 200%;
+        font-size: 5rem;
+        animation: animate 4.3s ease-in-out infinite;
+        font-variant: small-caps;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align: center;
+    }
+    @keyframes animate{
+        25% {
+            background-position: 0 100%;
+        }
+        50% {
+            background-position: 100% 100%;             
+        }
+        75% {
+            background-position: 100% 0;        
+        }
+        100% { 
+            background-position: 0 0;
+        }
+    }
+    #about {
+    margin: 34px;
+    display: flex;
+ }
+ #about .box{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: grey;
+ }
+  #about .box p{
+    text-align: center;
+  }
+ 
+ i {
+    font-size: 30px;
+    color: #ff5656;
+    border-radius: 50%;
+}
+
+.link {
+    margin-top: 4px;
+    text-align: center;
+}
+
+a.insta {
+    background: radial-gradient(circle at 40% 47%, #fdf497 0.5%, #fdf497 1%, #fd5949 50%, #d6249f 70%, #285AEB 90%);
+    -webkit-background-clip: text;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+
+}
+
+.fa-linkedin {
+    color: #0000ff;
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-square-whatsapp {
+    color: #5ef223;
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-square-facebook {
+    color: #0000ff;
+    font-size: 50px;
+    margin-right: 4px;
+}
+
+.fa-square-instagram {
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-paper-plane,
+.fa-square-phone {
+    color: #f22020;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.para {
+    font-size: 18px;
+}
+.contact-left {
+    width: 400px;
+    border: 3px solid #ff0000;
+    margin: 30px auto;
+    background-color:white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.contact-right {
+    width: 400px;
+    border: 3px solid #ff0000;
+    background-color: white;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
+.con-link{
+    text-decoration: none;
+    color:black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input,
+form textarea {
+    width: 85%;
+    border: 0;
+    outline: none;
+    background: #fbb8b8;
+    padding: 15px;
+    margin: 5px auto;
+    font-size: 18px;
+    color: #000000;
+    border-radius: 5px;
+
+}
+
+.butn2 {
+    display: block;
+    padding: 15px;
+    width: 150px;
+    margin:5px auto;
+    border-radius:5px;
+    border: 0;
+    background-color: #ff3939;
+    color: white;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="fliqalogo.jpg" alt="fliqaindia.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">HOME</a></li>
+            <li class="item"><a href="#services">SERVICES</a></li>
+            <li class="item"><a href="#blogs">BLOGS</a></li>
+            <li class="item"><a href="#about">ABOUT</a></li>
+            
+            <li class="item"><a href="#" class="btn1">SIGN UP</a></li>
+            <li class="item"><a href="#" class="btn2">SIGN IN</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        FLIQAINDIA
+    </div>
+    <section id="home">
+        <img src="camera.jpg">
+        
+        <h1>INDIAS LEADING CREATIVE PLATFORM</h1>
+        <p>Experience Hussle Free Bookings. Trusted by 2500+ Customers.</p>
+        <input type="text" name="" placeholder="Search service, blog and many more.">
+        <button class="btn">SEARCH</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <p>Discover the Range of Services provided by Fliqaindia</p>
+        <div id="services">
+        <div class="box">
+        <img src="prewedding.jpg" alt="">
+        <h2 class="h-secondary center">Pre Wedding Photoshoot</h2>
+        <p class="center">starting at 25000 (One day)</p>
+        </div>
+        <div class="box">
+            <img src="wedding.webp" alt="">
+            <h2 class="h-secondary center">Wedding Photoshoot</h2>
+            <p class="center">starting at 65000 (Two day)</p>
+            </div>
+            <div class="box">
+                <img src="portfolio.jpg" alt="">
+                <h2 class="h-secondary center">Portfolio shoot</h2>
+                <p class="center">starting at 25000 (standard price for 6-8 hours)</p>
+                </div>
+                <div class="box">
+                    <img src="baby.webp" alt="">
+                    <h2 class="h-secondary center">Birthday Photoshoot</h2>
+                    <p class="center">starting at 15000 (One day)</p>
+                    </div>
+        </div>
+    </section>
+   
+    <section class="blogs-container">
+        <h1 class="h-primary center">Blogs</h1>
+        <p>Check out our Latest Blog</p>
+        <div id="blogs">
+            <div class="box">
+                <img src="wed2.jpg" alt="">
+                <h2 class="h-secondary center">Marcus and Elish</h2>
+                <p class="center">38 photos, Ahmedabad,India</p>
+            </div>
+            <div class="box">
+                <img src="wed1.jpg" alt="">
+                <h2 class="h-secondary center">Dhruv and Sakshi</h2>
+                <p class="center">38 photos, Delhi,India</p>
+            </div>
+            <div class="box">
+                <img src="wed3.jpg" alt="">
+                <h2 class="h-secondary center">shreyansh and Samriddhi </h2>
+                <p class="center">38 photos, Mumbai,India</p>
+            </div>
+            <div class="box">
+                <img src="wed4.jpg" alt="">
+                <h2 class="h-secondary center">Jay and Ruhi</h2>
+                <p class="center">38 photos, Lucknow,India</p>
+            </div>
+            
+        </div>
+        
+        <button class="btn">View more wedding ~</button>
+    </section>
+    <section class="about-container">
+        <h1 class="h-primary center">About</h1>
+        <div id="about">
+            <div class="box">
+                <p class="center">
+               We at Fliqaindia started our journey with the belief that everyone has the right to quality photography that would help them better capture as well as conserve their special moments.
+               We have been appreciated and recommended by Start-Up India, Startup Bengal, Imagesbazar, and Digital India for our novel initiative. We are also trusted by Justdial, WedMEGood, ShaadiSaga, Wedding-wire 
+               and so many well-known event organizers. Now we have expanded our business in different parts of India owing to our happy customers who have believed in us, supported us, and promoted through strong word-of-mouth. 
+               We continue to work hard toward realizing our vision of making quality photography accessible and affordable for all.
+                </p>
+                
+                <h1>Specialities-</h1>
+                <ul>
+                    <li>Photography</li>
+                    <li>Videography</li>
+                    <li>Graphics Design</li>
+                    <li>Wedding Photography</li>
+                        <li>Potrait Photography</li>
+                        <li>Landscape Photography</li>             
+                        <li>Design</li>
+                        <li>Animation</li>
+                        <li>Website Design</li>
+                        <li>Travel Photography</li>
+                        <li>Documentary</li>                 
+                        <li>Motion Graphics</li>         
+                        <li>Logo</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+                                     
+    
+    <section id="container">
+        <h3 class="h-secondary">DISCOVER GRAPHIC DESIGN IDEAS AND SERVICES</h3>
+        <p>FROM BRANDING TO MARKETING</p>
+        <input type="text" name="" placeholder="What kind of Design you are Looking For.">
+            <button class="btn">SEARCH</button>
+        </section>
+        
+        <div class="row">
+            <div class="contact-left">
+              <h2 style="text-align: center;margin-bottom: 10px;" class="con-head">CONTACT DETAILS</h2>
+              <p class="para"><i class="fa-solid fa-paper-plane"></i><a href = "mailto:bhuwaneshranjan0001@gamil.com" class="con-link">bhuwaneshranjan0001@gmail.com</a></p>
+              <p class="para"><i class="fa-solid fa-square-phone"></i><a href="tel:+919336704702" class="con-link"> +919336704702</a></p>
+              <a href="https://www.facebook.com/profile.php?id=100052135233545" class="facebook" target="_blank"><i
+                  class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://instagram.com/bhuuvii_07?igshid=ZDc4ODBmNjlmNQ==" class="insta" target="_blank"><i
+                  class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://whatsapp.com/dl/" class="whatsapp" target="_blank"> <i
+                  class="fa-brands fa-square-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/bhuwanesh-ranjan-94b914279" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a><br />
+            </div>
+            <div class="contact-right">
+              <h2 style="text-align: center;margin-bottom: 10px;" class="con-head">ASK QUESTIONS</h2>
+              <form>
+                <input type="text" name="Name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Write Your Message Here"></textarea>
+                <button type="submit" class="butn2">ASK QUERY</button>
+              </form>
+          </div>
+          </div>
+           
+          
+</body>
+</html>
